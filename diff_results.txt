@@ -1,0 +1,35 @@
+2026-04-25 13:03:37,806 - DEBUG - Summary Online Algorithms (mean AUC-PR - without training scores):
+2026-04-25 13:03:37,812 - DEBUG -          raw_pr_auc    Avg
+scenario        DA3       
+method                    
+xStream       0.401  0.401
+2026-04-25 13:03:37,815 - DEBUG - ########################
+2026-04-25 13:03:37,815 - DEBUG - Summary Online Algorithms (mean AUC-PR - with training scores):
+2026-04-25 13:03:37,819 - DEBUG -          raw_pr_auc_wtd    Avg
+scenario            DA3       
+method                        
+xStream           0.366  0.366
+2026-04-25 13:03:37,822 - DEBUG - ########################
+2026-04-25 13:03:37,822 - DEBUG - Summary Online Algorithms (std AUC-PR):
+2026-04-25 13:03:37,827 - DEBUG -          raw_pr_auc      Avg
+scenario        DA3         
+method                      
+xStream     0.02298  0.02298
+
+2026-04-25 14:13:36,398 - DEBUG - Summary Online Algorithms (mean AUC-PR - without training scores):
+2026-04-25 14:13:36,404 - DEBUG -          raw_pr_auc    Avg
+scenario        DA3       
+method                    
+RSHash        0.144  0.144
+2026-04-25 14:13:36,406 - DEBUG - ########################
+2026-04-25 14:13:36,407 - DEBUG - Summary Online Algorithms (mean AUC-PR - with training scores):
+2026-04-25 14:13:36,411 - DEBUG -          raw_pr_auc_wtd    Avg
+scenario            DA3       
+method                        
+RSHash            0.127  0.127
+2026-04-25 14:13:36,413 - DEBUG - ########################
+2026-04-25 14:13:36,413 - DEBUG - Summary Online Algorithms (std AUC-PR):
+2026-04-25 14:13:36,417 - DEBUG -          raw_pr_auc      Avg
+scenario        DA3         
+method                      
+RSHash      0.00018  0.00018
