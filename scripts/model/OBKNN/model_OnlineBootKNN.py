@@ -909,7 +909,7 @@ if __name__ == "__main__":
     #DATASETS_LIST = ["DA1_", "SA1_", "TA1_", "DA2_", "SA2_", "TA2_","DA3_", "SA3_", "TA3_"]
 
 
-    DATASETS_LIST = ["DA3_"]
+    DATASETS_LIST = ["DA1_"]
 
 
     f_break=False
@@ -1010,7 +1010,7 @@ if __name__ == "__main__":
             row = 0
 
             SCORE_DIR = "direct" # direct, inverse
-            P_WINDOW_SIZE = 0.2
+            P_WINDOW_SIZE = 0.02
             if P_WINDOW_SIZE != None: 
                 WINDOW_SIZE = max(1, int(len(df) * P_WINDOW_SIZE)) 
 
@@ -1029,9 +1029,9 @@ if __name__ == "__main__":
 
             #learner = OnlineBootKNN(schema=schema, random_seed=i, window_size=WINDOW_SIZE, type_dist="largest", chunk_size=30,  ensemble_size=30, dmetric="cityblock", transf="ZNORM", alpha_z_test=0.05, algorithm="brute", no_bootstrapp=False, no_z_score=False, update_mode_stats="welford", update_distance_with_abnormal=True, alpha_ema=0.01, n_jobs = N_JOBS)
 
-            #learner = HStreeCapy(schema=schema, window_size=WINDOW_SIZE, number_of_trees=25, anomaly_threshold=0.5, size_limit=0.1, max_depth=10, random_seed=i)
+            learner = HStreeCapy(schema=schema, window_size=WINDOW_SIZE, number_of_trees=25, anomaly_threshold=0.5, size_limit=0.1, max_depth=10, random_seed=i)
 
-            learner = xStream(window_size=WINDOW_SIZE, depth=25, n_chains=100, num_components=50)
+            #learner = xStream(window_size=WINDOW_SIZE, depth=25, n_chains=100, num_components=50)
 
             #learner = SWLOF(window=WINDOW_SIZE, k=10, k_is_max=False, simplified=False, metric="euclidean")
 
